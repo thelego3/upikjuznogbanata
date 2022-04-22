@@ -1,0 +1,236 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'futuramedium';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
+
+@font-face {
+  font-family: 'futuralight';
+  src: url(../fontovi/FuturaLightfont.ttf);
+  font-family: 'futuramedium';
+  src: url(../fontovi/futuramediumbt.ttf);
+}
+
+.navigacija {
+  font-family: 'futuramedium';
+}
+
+.btn {
+  padding: 10px 30px !important;
+  color: #000 !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  border: 2px solid cyan !important;
+  background-color: cyan !important;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+}
+
+.btn:hover {
+  background-color: transparent !important;
+  -webkit-transition: 0.4s !important;
+  transition: 0.4s !important;
+}
+
+.mc-nav {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-image: url(../images/header.jpg) !important;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+}
+
+.mc-nav .mc-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.mc-nav .overlay {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.mc-nav a img {
+  width: 50%;
+}
+
+.mc-nav .mc-naslov .mc-naslov-blok {
+  padding-top: 350px;
+  padding-bottom: 150px;
+}
+
+.mc-nav .mc-naslov .mc-naslov-blok .font-blok {
+  font-weight: 600;
+}
+
+.mc-nav .mc-naslov .mc-naslov-blok p {
+  font-size: 30px;
+}
+
+.mc-nav .mc-naslov .mc-naslov-blok h1 {
+  max-width: 80%;
+}
+
+.mc-o-nama .img-shadow {
+  -webkit-box-shadow: -2px 6px 23px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 6px 23px -2px rgba(0, 0, 0, 0.75);
+}
+
+.mc-o-nama .right-side {
+  width: 20%;
+  height: 500px;
+  background-color: cyan;
+}
+
+.mc-o-nama .mc-onama {
+  margin-top: 150px;
+  margin-bottom: 250px;
+}
+
+.mc-o-nama .mc-onama .mc-empty-block {
+  width: 10%;
+  height: 384px;
+  position: relative;
+  left: 80px;
+  background-color: cyan;
+  -webkit-box-shadow: -2px 6px 23px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 6px 23px -2px rgba(0, 0, 0, 0.75);
+}
+
+.mc-o-nama .mc-onama .mc-upik {
+  z-index: 5;
+}
+
+.mc-o-nama .mc-onama .mc-upik .mc-btn {
+  background: transparent;
+  border: none;
+  color: #494949;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.mc-o-nama .mc-onama p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #494949;
+}
+
+.mc-o-nama .mc-onama .onama-text {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.mc-o-nama .mc-onama h1 {
+  border-top: 5px solid cyan;
+  font-size: 60px;
+}
+
+.mc-kontakt {
+  background-color: #000;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.mc-kontakt .mc-empty {
+  background-color: cyan;
+}
+
+.mc-kontakt .mc-kontakt-blok {
+  padding: 65px;
+}
+
+.mc-kontakt .mc-kontakt-blok h2 {
+  font-size: 50px !important;
+  text-transform: uppercase;
+}
+
+.mc-kontakt .mc-kontakt-blok .kontakt-text {
+  color: #999999;
+  font-weight: 600 !important;
+}
+
+.mc-kontakt .mc-kontakt-blok p {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.mc-kontakt .mc-kontakt-blok .podaci {
+  font-weight: 600 !important;
+  font-size: 20px;
+}
+
+.ikonica {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.ikonica:hover {
+  color: cyan;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer {
+  background-color: #333333;
+  padding: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.modal-backdrop {
+  z-index: 0 !important;
+}
+
+@media screen and (max-width: 1025px) {
+  .mc-o-nama .mc-onama p {
+    font-size: 16px;
+  }
+  .mc-kontakt .mc-kontakt-blok h2 {
+    font-size: 40px !important;
+  }
+  .mc-kontakt .mc-kontakt-blok p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .mc-kontakt .mc-kontakt-blok .kontakt-text {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
